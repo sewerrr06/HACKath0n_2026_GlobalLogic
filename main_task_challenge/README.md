@@ -32,6 +32,22 @@ pip install -r requirements.txt
 python plot_trajectory.py --start-stage BOOST --end-stage APOGEE
 ```
 
+## Backend (FastAPI + PostgreSQL + Docker)
+
+Для задачі також підготовлено стартовий backend у папці `backend/`.
+
+Швидкий запуск:
+
+```bash
+cd backend
+docker compose up --build
+```
+
+Стек піднімає `api + worker + redis + postgres`.
+PostgreSQL проброшений на `localhost:5433`, щоб уникнути конфлікту з локальним `5432`.
+
+Детальна інструкція та API: `backend/README.md`.
+
 ## Як працювати з логами через Python
 
 ### 1. Зчитати GPS точки
