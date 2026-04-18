@@ -9,3 +9,4 @@ celery==5.4.0
 redis==5.2.1
 python-multipart==0.0.20
 psutil==7.0.0
+#test dependencies
